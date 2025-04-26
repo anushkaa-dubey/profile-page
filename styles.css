@@ -1,443 +1,234 @@
-/* Base Styles */
-:root {
-    --primary: #4F46E5;
-    --primary-dark: #4338CA;
-    --secondary: #EC4899;
-    --dark: #1F2937;
-    --light: #F9FAFB;
-    --gray: #E5E7EB;
-    --dark-gray: #6B7280;
-    --success: #10B981;
-    --danger: #EF4444;
-    --border-radius: 12px;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark);
-    line-height: 1.6;
-    background-color: #F3F4F6;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Header */
-  .main-header {
-    background: white;
-    box-shadow: var(--shadow);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary);
-  }
-  
-  .main-nav a {
-    margin-left: 25px;
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-  }
-  
-  .main-nav a:hover {
-    color: var(--primary);
-  }
-  
-  /* Hero Section */
-  .hero {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
-  }
-  
-  .hero-content {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-  }
-  
-  .hero-text {
-    flex: 1;
-  }
-  
-  .hero-image {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-  }
-  
-  h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 32px;
-    border-radius: var(--border-radius);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    text-decoration: none;
-    border: none;
-  }
-  
-  .btn-primary {
-    background-color: var(--primary);
-    color: white;
-    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
-  }
-  
-  .btn-primary:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-  }
-  
-  .btn-secondary {
-    background-color: white;
-    color: var(--dark);
-    border: 1px solid var(--gray);
-  }
-  
-  .btn-secondary:hover {
-    background-color: var(--light);
-  }
-  
-  .btn-success {
-    background-color: var(--success);
-    color: white;
-  }
-  
-  .btn-success:hover {
-    background-color: #0E9F6E;
-    transform: translateY(-2px);
-  }
-  
-  /* Steps Section */
-  .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  .section-subtitle {
-    font-size: 18px;
-    color: var(--dark-gray);
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .steps-section {
-    padding: 80px 0;
-    background-color: white;
-  }
-  
-  .steps-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-  }
-  
-  .step {
-    background-color: var(--light);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    text-align: center;
-    transition: var(--transition);
-  }
-  
-  .step:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow);
-  }
-  
-  .step-icon {
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 20px;
-  }
-  
-  .step h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .step p {
-    color: var(--dark-gray);
-  }
-  
-  /* Features Section */
-  .features-section {
-    padding: 80px 0;
-    background-color: #F3F4F6;
-  }
-  
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-  }
-  
-  .feature-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .feature-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .feature-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .feature-card p {
-    color: var(--dark-gray);
-  }
-  
-  /* Form Section */
-  .form-section {
-    padding: 60px 0;
-    background-color: white;
-  }
-  
-  .form-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .form-header h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .form-header p {
-    color: var(--dark-gray);
-    font-size: 18px;
-  }
-  
-  .progress-container {
-    max-width: 600px;
-    margin: 30px auto 0;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background-color: var(--gray);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  
-  .progress-fill {
-    height: 100%;
-    width: 0%;
-    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-    border-radius: 4px;
-    transition: width 0.4s ease;
-  }
-  
-  .progress-text {
-    font-size: 14px;
-    color: var(--dark-gray);
-    text-align: center;
-  }
-  
-  .form-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .resume-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-  }
-  
-  .form-step {
-    display: none;
-  }
-  
-  .form-step.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .form-step-title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: var(--primary);
-  }
-  
-  .form-group {
-    margin-bottom: 25px;
-  }
-  
-  .form-row {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .form-row .form-group {
-    flex: 1;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid var(--gray);
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    transition: var(--transition);
-  }
-  
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-  }
-  
-  textarea {
-    min-height: 150px;
-    resize: vertical;
-  }
-  
-  .form-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    padding-top: 30px;
-    border-top: 1px solid var(--gray);
-  }
-  
-  .step-indicator {
-    font-size: 14px;
-    color: var(--dark-gray);
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 992px) {
-    .hero-content {
-      flex-direction: column;
-      gap: 40px;
-    }
-    
-    .hero-text, .hero-image {
-      text-align: center;
-      width: 100%;
-    }
-    
-    h1 {
-      font-size: 36px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 30px;
-    }
-    
-    .form-row {
-      flex-direction: column;
-      gap: 0;
-    }
-    
-    .form-navigation {
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    
-    .btn {
-      width: 100%;
-      justify-content: center;
-    }
-    
-    .step-indicator {
-      width: 100%;
-      text-align: center;
-    }
-  }
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: white;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  margin-left: 20px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Landing Section */
+.landing {
+  padding: 40px;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.intro .text {
+  max-width: 500px;
+  text-align: left;
+}
+
+#startBtn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #a64bf4, #f47cc3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.image img {
+  width: 400px;
+  height: auto;
+}
+
+/* How it Works + Features */
+.how-it-works, .features {
+  margin-top: 60px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.steps div {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-boxes div {
+  background: #fff4f9;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  font-weight: 500;
+}
+
+/* Form Section */
+.form-section {
+  background: white;
+  padding: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: relative;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(45deg, #a64bf4, #f47cc3);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-weight: bold;
+}
+
+/* Sidebar */
+/* Sidebar main container */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px; /* space between step items */
+  position: fixed;
+  top: 100px; /* adjust based on your layout */
+  left: 50px; /* adjust based on your layout */
+}
+
+/* Step item (dot + title) */
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Circle */
+.step-indicator {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--gray); /* inactive color */
+  border: 3px solid var(--primary); /* outer border */
+  transition: all 0.3s ease;
+}
+
+/* Active Circle */
+.step-indicator.active {
+  background-color: var(--primary);
+}
+
+/* Step title text */
+.step-title {
+  font-size: 16px;
+  color: var(--text-color); /* your normal text color */
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Active Title */
+.step-title.active {
+  font-weight: bold;
+  color: var(--primary); /* active text color */
+}
+
+
+/* Form Steps */
+form {
+  flex: 1;
+}
+
+.form-step {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-step.active {
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#prevBtn, #nextBtn, #generateBtn {
+  padding: 12px 30px;
+  border: none;
+  background: linear-gradient(45deg, #a64bf4, #f47cc3);
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#generateSection {
+  text-align: center;
+  margin-top: 30px;
+}
