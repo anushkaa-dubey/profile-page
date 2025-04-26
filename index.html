@@ -2,123 +2,229 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Resume Builder</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Builder | Craft Your Perfect Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Landing Section -->
-<section class="landing">
-  <header>
-    <div class="logo">Acenture</div>
-    <nav>
-      <a href="#">About Us</a>
-      <a href="#">AI Resume</a>
-      <a href="#">Contact</a>
-    </nav>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">Acenture</div>
+        <nav class="main-nav">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <div class="intro">
-    <div class="text">
-      <h1>Craft Your Perfect Resume in Minutes</h1>
-      <p>Powered by AI, our easy-to-use tool helps you build a standout resume that gets noticed—fast, smart, and tailored to your career goals.</p>
-      <button id="startBtn">Generate Resume</button>
-    </div>
-    <div class="image">
-      <img src="https://via.placeholder.com/400x300" alt="AI Illustration">
-    </div>
-  </div>
-
-  <section class="how-it-works">
-    <h2>HOW IT WORKS</h2>
-    <div class="steps">
-      <div>📝<br>Enter Your Details</div>
-      <div>📄<br>Choose Template</div>
-      <div>🛠️<br>Customize</div>
-      <div>🚀<br>Download & Apply</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Craft Your Perfect Resume in Minutes</h1>
+          <p>Powered by AI, our easy-to-use tool helps you build a standout resume that gets noticed—fast, smart, and tailored to your career goals.</p>
+          <button id="startBtn" class="btn btn-primary">
+            <span>Generate Resume</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-image.png" alt="Professional resume example">
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Build Smarter Resumes with Ease</h2>
-    <p>Craft professional, personalized resumes in minutes using the power of AI.</p>
-    <div class="feature-boxes">
-      <div>Instant Resume Creation</div>
-      <div>Smart Personalization</div>
-      <div>Modern, Professional Designs</div>
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="steps-section">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Create your perfect resume in just 4 simple steps</p>
+      
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-user-edit"></i>
+          </div>
+          <h3>Enter Your Details</h3>
+          <p>Fill in your professional information with our guided form</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>AI Analysis</h3>
+          <p>Our AI analyzes and optimizes your content</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Choose Design</h3>
+          <p>Select from our professional templates</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-file-download"></i>
+          </div>
+          <h3>Download & Apply</h3>
+          <p>Get your polished resume in multiple formats</p>
+        </div>
+      </div>
     </div>
   </section>
-</section>
 
-<!-- Form Section -->
-<section class="form-section hidden">
-  <h2>WELCOME TO AI RESUME GENERATOR</h2>
-  <p><em>Complete the steps:</em></p>
-
-  <!-- Progress bar -->
-  <div class="progress-bar">
-    <div class="progress"></div>
-    <div class="progress-text">0%</div>
-  </div>
-
-  <div class="form-container">
-    <!-- Sidebar Progress -->
-    <div class="sidebar">
-      <div class="circle active">1</div>
-      <div class="circle">2</div>
-      <div class="circle">3</div>
-      <div class="circle">4</div>
-      <div class="circle">5</div>
-      <div class="circle">6</div>
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">Build Smarter Resumes with Ease</h2>
+      <p class="section-subtitle">Craft professional, personalized resumes in minutes using the power of AI</p>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Instant Resume Creation</h3>
+          <p>Quickly generate a polished resume with just a few inputs</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Smart Personalization</h3>
+          <p>Our AI customizes your resume to match your unique skills</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Modern Designs</h3>
+          <p>Choose from beautifully designed templates recruiters love</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Form -->
-    <form id="resumeForm">
-      <div class="form-step active">
-        <h3>Basic Details *</h3>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
+  <!-- Form Section -->
+  <section id="form-section" class="form-section hidden">
+    <div class="container">
+      <div class="form-header">
+        <h2>AI Resume Generator</h2>
+        <p>Complete the following steps to generate your perfect resume</p>
+        
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="progress-text">Step <span id="current-step">1</span> of 6</div>
+        </div>
       </div>
-
-      <div class="form-step">
-        <h3>Professional Summary *</h3>
-        <textarea placeholder="Write a short professional summary..." required></textarea>
+      
+      <div class="form-wrapper">
+        <!-- Form -->
+        <form id="resumeForm" class="resume-form">
+          <!-- Step 1: Basic Details -->
+          <div class="form-step active">
+            <h3 class="form-step-title">Basic Details</h3>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 2: Professional Summary -->
+          <div class="form-step">
+            <h3 class="form-step-title">Professional Summary</h3>
+            <div class="form-group">
+              <label for="summary">Write a compelling summary of your professional background</label>
+              <textarea id="summary" placeholder="Experienced professional with 5+ years in..." required></textarea>
+            </div>
+          </div>
+          
+          <!-- Step 3: Work Experience -->
+          <div class="form-step">
+            <h3 class="form-step-title">Work Experience</h3>
+            <div class="form-group">
+              <label for="experience">Describe your work history</label>
+              <textarea id="experience" placeholder="Senior Developer, XYZ Company (2018-Present)..." required></textarea>
+            </div>
+          </div>
+          
+          <!-- Step 4: Education -->
+          <div class="form-step">
+            <h3 class="form-step-title">Education</h3>
+            <div class="form-group">
+              <label for="education">List your educational background</label>
+              <textarea id="education" placeholder="MBA, University of Business (2015)..." required></textarea>
+            </div>
+          </div>
+          
+          <!-- Step 5: Skills -->
+          <div class="form-step">
+            <h3 class="form-step-title">Skills</h3>
+            <div class="form-group">
+              <label for="skills">List your key skills (separate with commas)</label>
+              <textarea id="skills" placeholder="Project Management, Data Analysis, Team Leadership..." required></textarea>
+            </div>
+          </div>
+          
+          <!-- Step 6: Certifications -->
+          <div class="form-step">
+            <h3 class="form-step-title">Certifications</h3>
+            <div class="form-group">
+              <label for="certifications">List any professional certifications</label>
+              <textarea id="certifications" placeholder="PMP Certification, Google Analytics..." required></textarea>
+            </div>
+          </div>
+          
+          <!-- Form Navigation -->
+          <div class="form-navigation">
+            <button type="button" id="prevBtn" class="btn btn-secondary">
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            
+            <div class="step-indicator">
+              Step <span id="current-step-display">1</span> of 6
+            </div>
+            
+            <button type="button" id="nextBtn" class="btn btn-primary">
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+            
+            <button type="submit" id="generateBtn" class="btn btn-success hidden">
+              <i class="fas fa-file-download"></i> Generate Resume
+            </button>
+          </div>
+        </form>
       </div>
+    </div>
+  </section>
 
-      <div class="form-step">
-        <h3>Work Experience *</h3>
-        <textarea placeholder="Describe your work experience..." required></textarea>
-      </div>
-
-      <div class="form-step">
-        <h3>Education *</h3>
-        <textarea placeholder="Your educational background..." required></textarea>
-      </div>
-
-      <div class="form-step">
-        <h3>Skills *</h3>
-        <textarea placeholder="List your skills separated by commas..." required></textarea>
-      </div>
-
-      <div class="form-step">
-        <h3>Certifications *</h3>
-        <textarea placeholder="Your certifications..." required></textarea>
-      </div>
-
-      <div class="buttons">
-        <button type="button" id="prevBtn">Previous</button>
-        <button type="button" id="nextBtn">Next</button>
-      </div>
-
-      <div id="generateSection" class="hidden">
-        <button type="submit" id="generateBtn">Generate Resume</button>
-      </div>
-    </form>
-  </div>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
