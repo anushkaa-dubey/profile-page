@@ -1,0 +1,213 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    margin-left: 20px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Landing Section */
+  .landing {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .intro .text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  #startBtn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #a64bf4, #f47cc3);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .image img {
+    width: 400px;
+    height: auto;
+  }
+  
+  /* How it Works + Features */
+  .how-it-works, .features {
+    margin-top: 60px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .steps div {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+  .feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .feature-boxes div {
+    background: #fff4f9;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    font-weight: 500;
+  }
+  
+  /* Form Section */
+  .form-section {
+    background: white;
+    padding: 50px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .form-container {
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    position: relative;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(45deg, #a64bf4, #f47cc3);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-weight: bold;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  .sidebar .circle {
+    width: 40px;
+    height: 40px;
+    margin: 15px 0;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .sidebar .circle.active {
+    background: linear-gradient(45deg, #a64bf4, #f47cc3);
+  }
+  
+  /* Form Steps */
+  form {
+    flex: 1;
+  }
+  
+  .form-step {
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .form-step.active {
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  #prevBtn, #nextBtn, #generateBtn {
+    padding: 12px 30px;
+    border: none;
+    background: linear-gradient(45deg, #a64bf4, #f47cc3);
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #generateSection {
+    text-align: center;
+    margin-top: 30px;
+  }
+  

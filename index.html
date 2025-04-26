@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Landing Section -->
+<section class="landing">
+  <header>
+    <div class="logo">Acenture</div>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">AI Resume</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <div class="text">
+      <h1>Craft Your Perfect Resume in Minutes</h1>
+      <p>Powered by AI, our easy-to-use tool helps you build a standout resume that gets noticed—fast, smart, and tailored to your career goals.</p>
+      <button id="startBtn">Generate Resume</button>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/400x300" alt="AI Illustration">
+    </div>
+  </div>
+
+  <section class="how-it-works">
+    <h2>HOW IT WORKS</h2>
+    <div class="steps">
+      <div>📝<br>Enter Your Details</div>
+      <div>📄<br>Choose Template</div>
+      <div>🛠️<br>Customize</div>
+      <div>🚀<br>Download & Apply</div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Build Smarter Resumes with Ease</h2>
+    <p>Craft professional, personalized resumes in minutes using the power of AI.</p>
+    <div class="feature-boxes">
+      <div>Instant Resume Creation</div>
+      <div>Smart Personalization</div>
+      <div>Modern, Professional Designs</div>
+    </div>
+  </section>
+</section>
+
+<!-- Form Section -->
+<section class="form-section hidden">
+  <h2>WELCOME TO AI RESUME GENERATOR</h2>
+  <p><em>Complete the steps:</em></p>
+
+  <!-- Progress bar -->
+  <div class="progress-bar">
+    <div class="progress"></div>
+    <div class="progress-text">0%</div>
+  </div>
+
+  <div class="form-container">
+    <!-- Sidebar Progress -->
+    <div class="sidebar">
+      <div class="circle active">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+      <div class="circle">5</div>
+      <div class="circle">6</div>
+    </div>
+
+    <!-- Form -->
+    <form id="resumeForm">
+      <div class="form-step active">
+        <h3>Basic Details *</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-step">
+        <h3>Professional Summary *</h3>
+        <textarea placeholder="Write a short professional summary..." required></textarea>
+      </div>
+
+      <div class="form-step">
+        <h3>Work Experience *</h3>
+        <textarea placeholder="Describe your work experience..." required></textarea>
+      </div>
+
+      <div class="form-step">
+        <h3>Education *</h3>
+        <textarea placeholder="Your educational background..." required></textarea>
+      </div>
+
+      <div class="form-step">
+        <h3>Skills *</h3>
+        <textarea placeholder="List your skills separated by commas..." required></textarea>
+      </div>
+
+      <div class="form-step">
+        <h3>Certifications *</h3>
+        <textarea placeholder="Your certifications..." required></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+
+      <div id="generateSection" class="hidden">
+        <button type="submit" id="generateBtn">Generate Resume</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
