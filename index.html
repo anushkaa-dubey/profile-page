@@ -8,131 +8,92 @@
 </head>
 <body>
 
-<!-- Landing Section -->
-<section class="landing">
-  <header>
-    <div class="logo">Acenture</div>
-    <nav>
-      <a href="#">About Us</a>
-      <a href="#">AI Resume</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <div class="intro">
-    <div class="text">
-      <h1>Craft Your Perfect Resume in Minutes</h1>
-      <p>Powered by AI, our easy-to-use tool helps you build a standout resume that gets noticed—fast, smart, and tailored to your career goals.</p>
-      <button id="startBtn">Generate Resume</button>
-    </div>
-    <div class="image">
-      <img src="assets/heroimage.jpg" alt="AI Illustration">
-    </div>
+<!-- Landing Page -->
+<section class="landing-page" id="landingPage">
+  <div class="landing-content">
+    <h1>AI Resume Builder</h1>
+    <p>Ai powered resume generator</p>
+    <button id="startBtn" class="button big">Generate Resume</button>
   </div>
-
-  <section class="how-it-works">
-    <h2>HOW IT WORKS</h2>
-    <div class="steps">
-      <div>📝<br>Enter Your Details</div>
-      <div>📄<br>Choose Template</div>
-      <div>🛠️<br>Customize</div>
-      <div>🚀<br>Download & Apply</div>
-    </div>
-  </section>
-
-  <section class="features">
-    <h2>Build Smarter Resumes with Ease</h2>
-    <p>Craft professional, personalized resumes in minutes using the power of AI.</p>
-    <div class="feature-boxes">
-      <div>Instant Resume Creation</div>
-      <div>Smart Personalization</div>
-      <div>Modern, Professional Designs</div>
-    </div>
-  </section>
 </section>
 
 <!-- Form Section -->
-<section class="form-section hidden">
-  <h2>WELCOME TO AI RESUME GENERATOR</h2>
-  <p><em>Complete the steps:</em></p>
+<section class="form-section hidden" id="formSection">
 
-  <!-- Progress bar -->
-  <div class="progress-bar">
-    <div class="progress"></div>
-    <div class="progress-text">0%</div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="step-item">
+      <div class="step-indicator"></div>
+      <div class="step-title">1. Basic Details</div>
+    </div>
+    <div class="step-item">
+      <div class="step-indicator"></div>
+      <div class="step-title">2. Experience</div>
+    </div>
+    <div class="step-item">
+      <div class="step-indicator"></div>
+      <div class="step-title">3. Education</div>
+    </div>
+    <div class="step-item">
+      <div class="step-indicator"></div>
+      <div class="step-title">4. Skills</div>
+    </div>
+    <div class="step-item">
+      <div class="step-indicator"></div>
+      <div class="step-title">5. Certifications</div>
+    </div>
   </div>
 
-  <div class="form-container">
-    <div class="sidebar">
-        <div class="step-item">
-            <div class="step-indicator active"></div>
-            <div class="step-title">Basic Details</div>
-        </div>
-        <div class="step-item">
-            <div class="step-indicator"></div>
-            <div class="step-title">Work Experience</div>
-        </div>
-        <div class="step-item">
-            <div class="step-indicator"></div>
-            <div class="step-title">Education</div>
-        </div>
-        <div class="step-item">
-            <div class="step-indicator"></div>
-            <div class="step-title">Skills</div>
-        </div>
-        <div class="step-item">
-            <div class="step-indicator"></div>
-            <div class="step-title">Certifications</div>
-        </div>
-    </div>
-    
+  <!-- Main Content -->
+  <div class="form-main">
+    <h1 class="form-heading">Welcome to AI Resume Builder</h1>
+    <p class="form-subheading">Complete the steps:</p>
 
-    <!-- Form -->
+    <!-- Top Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+      <div class="progress-text" id="progress-percentage">0%</div>
+    </div>
+
     <form id="resumeForm">
       <div class="form-step active">
-        <h3>Basic Details *</h3>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
+        <h2>Basic Details</h2>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
       </div>
 
       <div class="form-step">
-        <h3>Professional Summary *</h3>
-        <textarea placeholder="Write a short professional summary..." required></textarea>
+        <h2>Experience</h2>
+        <textarea id="experience" placeholder="Your work experience..." required></textarea>
       </div>
 
       <div class="form-step">
-        <h3>Work Experience *</h3>
-        <textarea placeholder="Describe your work experience..." required></textarea>
+        <h2>Education</h2>
+        <textarea id="education" placeholder="Your education details..." required></textarea>
       </div>
 
       <div class="form-step">
-        <h3>Education *</h3>
-        <textarea placeholder="Your educational background..." required></textarea>
+        <h2>Skills</h2>
+        <input type="text" id="skills" placeholder="Skill 1, Skill 2, Skill 3" required>
       </div>
 
       <div class="form-step">
-        <h3>Skills *</h3>
-        <textarea placeholder="List your skills separated by commas..." required></textarea>
+        <h2>Certifications</h2>
+        <textarea id="certifications" placeholder="Your certifications..." required></textarea>
       </div>
 
-      <div class="form-step">
-        <h3>Certifications *</h3>
-        <textarea placeholder="Your certifications..." required></textarea>
-      </div>
-
-      <div class="buttons">
-        <button type="button" id="prevBtn">Previous</button>
-        <button type="button" id="nextBtn">Next</button>
-      </div>
-
-      <div id="generateSection" class="hidden">
-        <button type="submit" id="generateBtn">Generate Resume</button>
+      <!-- Navigation Buttons -->
+      <div class="button-group">
+        <button type="button" id="prevBtn" class="button hidden">Previous</button>
+        <button type="button" id="nextBtn" class="button">Next</button>
+        <button type="submit" id="generateBtn" class="button hidden">Generate Resume</button>
       </div>
     </form>
   </div>
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
